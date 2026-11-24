@@ -1,0 +1,1 @@
+{"dependencies":{"next":"^15.5.6","react":"^19.1.0","react-dom":"^19.1.0"},"devDependencies":{"@types/node":"^22.10.0","@types/react":"^19.1.0","typescript":"^5.7.0"},"name":"prometheon-si-app","private":true,"scripts":{"build":"next build && node scripts/postbuild.mjs","dev":"next dev -p 3101"},"version":"1.0.0"}
