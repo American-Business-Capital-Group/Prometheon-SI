@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'" />
+<title>Prometheon SI — Offline</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #0b0b0f; color: #f2f2f2; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 24px;
+  }
+  main { max-width: 560px; text-align: center; }
+  h1 { font-size: 28px; margin: 0 0 12px; letter-spacing: 0.02em; }
+  .brand { color: #c9a227; font-weight: 700; }
+  p { line-height: 1.55; color: #cfcfd6; }
+  .actions { margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  button, a.btn {
+    appearance: none; border: 1px solid #c9a227; background: #c9a227; color: #111;
+    font-size: 15px; font-weight: 600; padding: 10px 20px; border-radius: 8px; cursor: pointer;
+    text-decoration: none; display: inline-block;
+  }
+  a.btn.secondary { background: transparent; color: #c9a227; }
+  code { background: #1c1c24; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  .note { margin-top: 24px; font-size: 13px; color: #9a9aa5; }
+</style>
+</head>
+<body>
+  <main>
+    <h1><span class="brand">PROMETHEON SI</span></h1>
+    <p>The published site at <code>https://prometheon.si</code> could not be reached.</p>
+    <p>
+      This desktop app is a wrapper for the published Prometheon SI site, so it needs
+      either the live site or the private tailnet gateway (the Door) to be available.
+      Check your internet connection, then try again.
+    </p>
+    <div class="actions">
+      <button type="button" onclick="window.location.href='https://prometheon.si'">Retry prometheon.si</button>
+      <a class="btn secondary" href="http://100.89.231.37:8800">Open the tailnet app (the Door)</a>
+    </div>
+    <p class="note">
+      Tailnet address: <code>http://100.89.231.37:8800</code> — reachable only from a
+      device joined to the tailnet.
+    </p>
+  </main>
+</body>
+</html>
